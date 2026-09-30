@@ -1550,6 +1550,171 @@ ul, ol {
   color: var(--black);
 }
 
+a.tag {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+/* ==========================================================================
+   HERO AVEC PORTRAIT (COLONNE DE DROITE)
+   ========================================================================== */
+
+.hero-split {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.hero-split .hero-content {
+  max-width: none;
+  margin: 0;
+  text-align: left;
+}
+
+.hero-split .hero-lead {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero-split .btn-group,
+.hero-split .hero-guarantees {
+  justify-content: flex-start !important;
+}
+
+.hero-split h1 {
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+}
+
+.hero-split .hero-lead {
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  margin-bottom: 1.6rem;
+}
+
+.hero-portrait {
+  margin: 0;
+  position: relative;
+}
+
+.hero-portrait img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-dark);
+  box-shadow: var(--shadow-dark), 0 0 60px rgba(0, 229, 153, 0.08);
+}
+
+.hero-portrait figcaption {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  background-color: rgba(8, 13, 10, 0.82);
+  border: 1px solid var(--border-dark);
+  backdrop-filter: blur(6px);
+  font-size: 0.95rem;
+  color: var(--white);
+}
+
+.hero-portrait figcaption span {
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .hero-split {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hero-split .hero-content {
+    text-align: center;
+  }
+
+  .hero-split .hero-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-split .btn-group,
+  .hero-split .hero-guarantees {
+    justify-content: center !important;
+  }
+
+  .hero-portrait {
+    order: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+  }
+
+  .hero-portrait img {
+    width: 76px;
+    height: 76px;
+    aspect-ratio: 1 / 1;
+    object-position: 50% 25%;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+  }
+
+  .hero-portrait figcaption {
+    position: static;
+    padding: 0;
+    background: none;
+    border: 0;
+    backdrop-filter: none;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: calc(var(--nav-h) + 1.75rem);
+  }
+
+  .hero-split h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-split .eyebrow {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.75rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .hero-split .hero-lead {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-portrait img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .nav-logo {
+    font-size: 1.05rem;
+    white-space: nowrap;
+  }
+
+  .nav-actions .btn-sm {
+    display: none;
+  }
+}
+
 /* ==========================================================================
    RESPONSIVE MEDIA QUERIES
    ========================================================================== */
