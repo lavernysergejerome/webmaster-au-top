@@ -1339,6 +1339,114 @@ ul, ol {
 }
 
 /* ==========================================================================
+   CONTENU ÉDITORIAL (ACCUEIL) — RÉPONSE COURTE, PROSE, ÉTAPES, SIGNATURE
+   ========================================================================== */
+
+.answer-box {
+  max-width: 860px;
+  margin: 0 auto 2.5rem auto;
+  padding: 1.5rem 1.75rem;
+  background-color: var(--light);
+  border: 1px solid var(--gray-200);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-sm);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--gray-700);
+}
+
+.answer-box-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-500);
+  margin-bottom: 0.5rem;
+}
+
+.prose {
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--gray-700);
+}
+
+.mission-grid {
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.mission-grid .card-desc {
+  margin-bottom: 0;
+}
+
+.steps-list .card-desc,
+.step-card .card-desc {
+  color: var(--gray-300);
+  margin-bottom: 0;
+}
+
+.inline-link {
+  color: var(--black);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+.inline-link:hover {
+  text-decoration-thickness: 2px;
+}
+
+.geo-title-dark {
+  color: var(--black);
+}
+
+.section-light .tag,
+.section-white .tag {
+  background-color: var(--white);
+  border-color: var(--gray-200);
+  color: var(--gray-700);
+}
+
+.section-light .tag:hover,
+.section-white .tag:hover {
+  border-color: var(--accent);
+  background-color: var(--accent-soft);
+  color: var(--black);
+}
+
+.comparison-table tbody th {
+  background-color: transparent;
+  font-size: 0.95rem;
+}
+
+.page-byline {
+  max-width: 860px;
+  margin: 2.5rem auto 0 auto;
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  text-align: center;
+}
+
+.page-byline a {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ==========================================================================
    RESPONSIVE MEDIA QUERIES
    ========================================================================== */
 
