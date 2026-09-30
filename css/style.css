@@ -1485,6 +1485,16 @@ ul, ol {
   color: var(--white);
 }
 
+.rating-note a {
+  color: var(--gray-300);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.rating-note a:hover {
+  color: var(--accent);
+}
+
 .rating-block {
   margin: -0.5rem 0 1.75rem 0;
 }
