@@ -1550,6 +1550,12 @@ ul, ol {
   color: var(--black);
 }
 
+a.tag {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
+}
+
 /* ==========================================================================
    RESPONSIVE MEDIA QUERIES
    ========================================================================== */
