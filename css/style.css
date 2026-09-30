@@ -1339,6 +1339,218 @@ ul, ol {
 }
 
 /* ==========================================================================
+   CONTENU ÉDITORIAL (ACCUEIL) — RÉPONSE COURTE, PROSE, ÉTAPES, SIGNATURE
+   ========================================================================== */
+
+.answer-box {
+  max-width: 860px;
+  margin: 0 auto 2.5rem auto;
+  padding: 1.5rem 1.75rem;
+  background-color: var(--light);
+  border: 1px solid var(--gray-200);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-sm);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--gray-700);
+}
+
+.answer-box-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-500);
+  margin-bottom: 0.5rem;
+}
+
+.prose {
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--gray-700);
+}
+
+.mission-grid {
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.mission-grid .card-desc {
+  margin-bottom: 0;
+}
+
+.steps-list .card-desc,
+.step-card .card-desc {
+  color: var(--gray-300);
+  margin-bottom: 0;
+}
+
+.inline-link {
+  color: var(--black);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+.inline-link:hover {
+  text-decoration-thickness: 2px;
+}
+
+.geo-title-dark {
+  color: var(--black);
+}
+
+.section-light .tag,
+.section-white .tag {
+  background-color: var(--white);
+  border-color: var(--gray-200);
+  color: var(--gray-700);
+}
+
+.section-light .tag:hover,
+.section-white .tag:hover {
+  border-color: var(--accent);
+  background-color: var(--accent-soft);
+  color: var(--black);
+}
+
+.comparison-table tbody th {
+  background-color: transparent;
+  font-size: 0.95rem;
+}
+
+.page-byline {
+  max-width: 860px;
+  margin: 2.5rem auto 0 auto;
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  text-align: center;
+}
+
+.page-byline a {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ==========================================================================
+   PREUVE SOCIALE — BADGE NOTE GOOGLE & AVIS CLIENTS
+   ========================================================================== */
+
+.stars {
+  display: inline-flex;
+  gap: 2px;
+  color: #f5b301;
+}
+
+.stars svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-dark);
+  color: var(--white);
+  font-size: 0.95rem;
+  transition: border-color 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+
+.rating-badge:hover,
+.rating-badge:focus-visible {
+  border-color: var(--accent);
+  background-color: var(--accent-soft);
+}
+
+.rating-score strong {
+  color: var(--white);
+}
+
+.rating-note a {
+  color: var(--gray-300);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.rating-note a:hover {
+  color: var(--accent);
+}
+
+.rating-block {
+  margin: -0.5rem 0 1.75rem 0;
+}
+
+.rating-note {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--gray-400);
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+}
+
+.review-text {
+  margin: 0;
+  flex-grow: 1;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--gray-700);
+}
+
+.card-dark .review-text {
+  color: var(--gray-200);
+}
+
+.review-author {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.card-dark .review-author {
+  border-top-color: var(--border-dark);
+}
+
+.review-author span {
+  color: var(--gray-500);
+  font-size: 0.82rem;
+}
+
+.card-dark .review-author span {
+  color: var(--gray-400);
+}
+
+.section-light .lead strong,
+.section-white .lead strong {
+  color: var(--black);
+}
+
+/* ==========================================================================
    RESPONSIVE MEDIA QUERIES
    ========================================================================== */
 
