@@ -1447,6 +1447,100 @@ ul, ol {
 }
 
 /* ==========================================================================
+   PREUVE SOCIALE — BADGE NOTE GOOGLE & AVIS CLIENTS
+   ========================================================================== */
+
+.stars {
+  display: inline-flex;
+  gap: 2px;
+  color: #f5b301;
+}
+
+.stars svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-dark);
+  color: var(--white);
+  font-size: 0.95rem;
+  transition: border-color 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+
+.rating-badge:hover,
+.rating-badge:focus-visible {
+  border-color: var(--accent);
+  background-color: var(--accent-soft);
+}
+
+.rating-score strong {
+  color: var(--white);
+}
+
+.rating-block {
+  margin: -0.5rem 0 1.75rem 0;
+}
+
+.rating-note {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--gray-400);
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+}
+
+.review-text {
+  margin: 0;
+  flex-grow: 1;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--gray-700);
+}
+
+.card-dark .review-text {
+  color: var(--gray-200);
+}
+
+.review-author {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.card-dark .review-author {
+  border-top-color: var(--border-dark);
+}
+
+.review-author span {
+  color: var(--gray-500);
+  font-size: 0.82rem;
+}
+
+.card-dark .review-author span {
+  color: var(--gray-400);
+}
+
+.section-light .lead strong,
+.section-white .lead strong {
+  color: var(--black);
+}
+
+/* ==========================================================================
    RESPONSIVE MEDIA QUERIES
    ========================================================================== */
 
